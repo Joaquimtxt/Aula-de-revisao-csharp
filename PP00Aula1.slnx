@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="PP00Aula1/PP00Aula1.csproj" />
   <Project Path="PP00Aula2/PP00Aula2/PP00Aula2.csproj" Id="17a3404c-6643-4047-bd69-bcb9133dea85" />
+  <Project Path="PP00Exercicios/ListaDe30Exercícios/ListaDe30Exercícios.csproj" Id="7799fae4-392c-412c-a31e-1acbf09fc85f" />
 </Solution>
