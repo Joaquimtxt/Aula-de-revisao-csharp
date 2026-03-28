@@ -3,6 +3,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using WebAPI.Data;
+using WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,9 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>()
 // 5. Configurar a autenticação e autorização (opcional, mas recomendado para APIs seguras)
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
+
+//6. Configurar o serviõ de email (opcional, mas recomendado para funcionalidades de notificação por email
+builder.Services.AddScoped<EmailService>();
 
 var app = builder.Build();
 
