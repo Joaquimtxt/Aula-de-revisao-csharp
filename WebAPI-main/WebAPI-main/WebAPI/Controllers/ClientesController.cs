@@ -31,7 +31,6 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
-            // Usa o DbSet singular definido no ApplicationDbContext
             return await _context.Cliente.ToListAsync();
         }
 
